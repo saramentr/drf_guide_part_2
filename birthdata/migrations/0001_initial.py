@@ -29,7 +29,7 @@ class Migration(migrations.Migration):
                 ('firstname', models.CharField(max_length=100, verbose_name='имя')),
                 ('lastname', models.CharField(max_length=100, verbose_name='фамилия')),
                 ('patronymic', models.CharField(max_length=100, verbose_name='отчество')),
-                ('birth_place', models.ManyToManyField(to='birthdata.Town', verbose_name='место рождения')),
+                ('birth_place', models.ManyToManyField(to='birthdata.town', verbose_name='место рождения')),
             ],
             options={
                 'verbose_name': 'Писатель',
